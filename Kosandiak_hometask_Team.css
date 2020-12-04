@@ -1,0 +1,827 @@
+@font-face {
+	font-family: 'Helvetica-thin';
+	src: url('../Lesson4 + HM/fonts/helveticaneuecyr-thin/fonts/helveticaneuecyr-thin.eot;');
+	src: local('☺'), url('../Lesson4 + HM/fonts/helveticaneuecyr-thin/fonts/helveticaneuecyr-thin.woff') format('woff'), url('fonts/helveticaneuecyr-thin.ttf') format('truetype'), url('fonts/helveticaneuecyr-thin.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Helvetica-roman';
+	src: url('../Lesson4 + HM/fonts/helveticaneuecyr-roman/fonts/helveticaneuecyr-roman.eot');
+	src: local('☺'), url('../Lesson4 + HM/fonts/helveticaneuecyr-roman/fonts/helveticaneuecyr-roman.woff') format('woff'), url('fonts/helveticaneuecyr-roman.ttf') format('truetype'), url('fonts/helveticaneuecyr-roman.svg') format('svg');
+	font-weight: 500;
+	font-style: normal;
+}
+html {
+    height: 100%;
+    
+}
+
+body{
+    display: block;
+     margin: 0;
+    height: 100%;
+    background: #F5F6F9;
+    
+}
+
+.logo-style{
+    width: 25px;
+    height: 25px;
+}
+a.logo-style{
+    text-decoration: none;
+}
+.container{
+    
+    height: 100%;
+    width: 90%;
+    margin:  0 auto;
+    border-radius: 0 0 20px 20px ;
+    min-height: 600px;
+    min-width: 1200px;
+   
+}
+header{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    height: 8%;
+    margin: 0 auto;
+    align-items: center;
+    border-radius: 20px 20px 0 0;
+    /* box-shadow: 0px -5px 10px 1px rgba(34, 60, 80, 0.2); */
+    padding: 0;
+    background-color: white;
+    box-sizing: border-box;
+    margin-top: 20px;
+    
+} 
+header a .logo-style{
+    margin-left: 30px;
+}
+header div.greeting span:nth-child(2){
+    margin-right: 30px;
+    
+}
+header div.greeting a img.ava1{
+    width: 30px;
+    border-radius: 10px;
+    height: 30px;
+    margin-right: 30px;
+}
+div.greeting{
+    display: flex;
+    align-items: center;
+}
+div.greeting a .arrow-style{
+    height: 10px;
+    width: 10px;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    position: absolute;
+    
+    right: 30px;
+    top: 30px;
+}
+header div.greeting span:nth-child(1){
+    font-family: 'Helvetica-thin';
+}
+header div.greeting span:nth-child(2){
+    font-family: 'Helvetica-roman';
+}
+div.global{
+    margin: 0;
+    padding: 0;
+    height: 92%;
+    margin-bottom: 20px;
+ background: white;
+ display: flex;
+ z-index: 1;
+ border-radius: 0 0 20px 20px ;
+ box-sizing: border-box;
+
+}
+div.content{
+    display: flex;
+    z-index: 2;
+    background: #F5F6F9;
+    width: 97%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    
+    
+    
+}
+
+div.nav-bar{
+    display: flex;
+    background-color: white;
+    width: 5%;
+    height: 50%;
+ 
+    border-radius: 30px;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items:center;
+    margin: auto 20px ;
+ 
+}
+
+.nav-bar a svg{
+    fill: rgb(0, 0, 0)(7, 0, 0);
+    width: 25px;
+    height: 25px;
+    
+     padding: 5px;
+     border-radius: 10px;
+ }
+ .nav-bar a svg:hover{
+   
+    fill: white;
+    background-color: #3F85F6;
+     
+ }
+ /* SEARCH FIELD */
+ div.main{
+     display: flex;
+     width: 100%;
+     height: 100%;
+     box-sizing: border-box;
+     flex-direction: column;
+ }
+div.up-search{
+    display: flex;
+    width: 100%;
+    height: 10%;
+    justify-content: center;
+    margin: 0 auto;
+    box-sizing: border-box;
+    margin-top: 50px;
+    align-items: center;
+    position: relative;
+    
+}
+div.up-search div.search-field svg{
+    fill: #3F85F6;
+    width: 20px;
+    height: 20px;
+    margin-right: 20px;
+}
+div.up-search div.search-field{
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    width: 75%;
+    justify-content: space-between;
+    box-sizing: border-box;
+    
+}
+div.search-field input{
+    outline: none;
+    border: none;
+width:80%;
+padding-right: 30px;
+margin-left: 20px;
+color: #3F85F6;
+line-height: 45px;
+}
+div.up-search div.btn{
+    margin-left: 40px;
+    
+}
+div.btn button{
+    background-color: #3F85F6;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    color: white;
+    border-radius: 20px;
+    line-height: 45px;
+    padding: 0 30px;
+    transition: 0.1s;
+    cursor: pointer;
+    min-width: 40px;
+  
+    
+}
+div.btn button:active{
+    background-color: #1a51aa;
+    transform: scale(1.1);
+    transition: 0.1s;
+    cursor: pointer;
+}
+/************** ALL USERS **********/
+div.all-users{
+    
+    box-sizing: border-box;
+    margin-right: 20px;
+    height: 90%;
+    width: 100%;
+    flex-direction: row;
+
+}
+div.first-row{
+    height: 45%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    
+}
+div.first-row div.first-element{
+    display: flex;
+    height: 100%;
+    width: 20%;
+    background-color:white;
+    border-radius: 20px;
+    flex-direction: column;
+    margin: 20px;
+    /* position: relative; */
+    
+}
+.first-element div.ava{
+    
+    margin: 0 auto;
+
+}
+.first-element div.ava a {
+    display: flex;
+    width: 60px;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    background-color: #F8CE58;
+    border-radius: 20px;
+    color: white;
+    box-shadow: 0px -1px 25px -3px #F8CE58;
+    margin-top: 20px;
+}
+.first-element div.about{
+    font-family: 'Helvetica-thin';
+    color: rgb(143, 143, 143);
+    font-size: 14px;
+    margin: 0 auto;
+    text-align: center;
+}
+div.first-row div.second-element{
+    display: flex;
+    height: 100%;
+    width: 20%;
+    background-color:white;
+    border-radius: 20px;
+    flex-direction: column;
+    margin: 20px;
+    
+}
+.second-element div.ava1{
+    margin:  0 auto;
+}
+.second-element div.ava1 a {
+    display: flex;
+    width: 60px;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    background-color: #EC4B4B;
+    border-radius: 20px;
+    color: white;
+    box-shadow: 0px -1px 25px -3px  #EC4B4B;
+    margin-top: 20px;
+}
+.second-element div.about1{
+    text-align: center;
+    justify-content: center;
+    font-family: 'Helvetica-thin';
+    color: rgb(143, 143, 143);
+    font-size: 14px;
+}
+div.first-row div.third-element{
+    display: flex;
+    height: 100%;
+    width: 20%;
+    background-color:white;
+    border-radius: 20px;
+    flex-direction: column;
+    margin: 20px;
+    
+}
+.third-element div.ava2{
+    margin:  0 auto;
+}
+.third-element div.ava2 a {
+    display: flex;
+    width: 60px;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    background-color: #EF8357;
+    border-radius: 20px;
+    color: white;
+    box-shadow: 0px -1px 25px -3px  #EF8357;
+    margin-top: 20px;
+}
+.third-element div.about2{
+    text-align: center;
+    justify-content: center;
+    font-family: 'Helvetica-thin';
+    color: rgb(143, 143, 143);
+    font-size: 14px;
+}
+div.first-row div.fourth-element{
+    display: flex;
+    height: 100%;
+    width: 20%;
+    background-color:white;
+    border-radius: 20px;
+    flex-direction: column;
+    margin: 20px;
+    
+}
+.fourth-element div.ava3{
+    margin:  0 auto;
+}
+.fourth-element div.ava3 a {
+    display: flex;
+    width: 60px;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    background-color: #EC4B4B;
+    border-radius: 20px;
+    color: white;
+    box-shadow: 0px -1px 25px -3px #EC4B4B;
+    margin-top: 20px;
+}
+.fourth-element div.about3{
+    text-align: center;
+    justify-content: center;
+    font-family: 'Helvetica-thin';
+    color: rgb(143, 143, 143);
+    font-size: 14px;
+}
+
+/********** HOVER EFFECT FOR CASES **************/
+div.first-row div.first-element:hover{
+    background-color:#3F85F6; 
+    cursor: pointer;
+}
+
+div.first-element:hover p{
+    color: white;
+    }
+div.first-element:hover span{
+color: white;
+}
+div.first-row div.second-element:hover{
+    background-color:#3F85F6; 
+    cursor: pointer;
+}
+
+div.second-element:hover p{
+    color: white;
+    }
+div.second-element:hover span{
+color: white;
+}
+div.first-row div.third-element:hover{
+    background-color:#3F85F6; 
+    cursor: pointer;
+}
+
+div.third-element:hover p{
+    color: white;
+    }
+div.third-element:hover span{
+color: white;
+}
+div.first-row div.fourth-element:hover{
+    background-color:#3F85F6; 
+    cursor: pointer;
+}
+
+div.fourth-element:hover p{
+    color: white;
+    }
+div.fourth-element:hover span{
+color: white;
+}
+/* *********DUMP********** */
+div.first-element svg.dd-style{
+    width: 20px;
+    fill:#3F85F6 ;
+    height: 20px;
+    position: absolute;
+    left: 28%;
+    top: 195px;
+    padding: 16px;
+  background-color:rgb(255, 255, 255);
+  border-radius: 20px;
+  display: none;
+  transition: 0.1s;
+}
+div.first-element:hover div svg.dd-style{
+display: block;
+}
+div.first-element a svg.dd-style:hover{
+    transform: scale(1.1);
+    transition: 0.1s;
+}
+div.first-element a svg.dd-style:active{
+   background-color: #b1b1b1; 
+}
+div.second-element svg.dd-style1{
+    width: 20px;
+    fill:#3F85F6 ;
+    height: 20px;
+    position: absolute;
+    left: 48%;
+    top: 195px;
+    padding: 16px;
+  background-color:rgb(255, 255, 255);
+  border-radius: 20px;
+  display: none;
+  transition: 0.1s;
+
+}
+div.second-element:hover div svg.dd-style1{
+display: block;
+}
+div.second-element a svg.dd-style1:hover{
+    transform: scale(1.1);
+    transition: 0.1s;
+}
+div.second-element a svg.dd-style1:active{
+   background-color: #b1b1b1; 
+}
+div.third-element svg.dd-style2{
+    width: 20px;
+    fill:#3F85F6 ;
+    height: 20px;
+    position: absolute;
+    left: 68%;
+    top: 195px;
+    padding: 16px;
+  background-color:rgb(255, 255, 255);
+  border-radius: 20px;
+  display: none;
+  transition: 0.1s;
+
+}
+div.third-element:hover div svg.dd-style2{
+display: block;
+}
+div.third-element a svg.dd-style2:hover{
+    transform: scale(1.1);
+    transition: 0.1s;
+}
+div.third-element a svg.dd-style2:active{
+   background-color: #b1b1b1; 
+}
+div.fourth-element svg.dd-style3{
+    width: 20px;
+    fill:#3F85F6 ;
+    height: 20px;
+    position: absolute;
+    left: 88%;
+    top: 195px;
+    padding: 16px;
+  background-color:rgb(255, 255, 255);
+  border-radius: 20px;
+  display: none;
+  transition: 0.1s;
+
+}
+div.fourth-element:hover div svg.dd-style3{
+display: block;
+}
+div.fourth-element a svg.dd-style3:hover{
+    transform: scale(1.1);
+    transition: 0.1s;
+}
+div.fourth-element a svg.dd-style3:active{
+   background-color: #b1b1b1; 
+}
+/* ************************SECOND ROW *************/
+div.second-row{
+    height: 45%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    
+    
+}
+div.second-row div.element1{
+    display: flex;
+    height: 100%;
+    width: 20%;
+    background-color:white;
+    border-radius: 20px;
+    flex-direction: column;
+    margin: 20px;
+    /* position: relative; */
+    
+}
+.element1 div.avatar1{
+    
+    margin: 0 auto;
+
+}
+.element1 div.avatar1 img.city{
+    width:60px ;
+    height: 60px;
+    border-radius: 20px;
+}
+.element1 div.avatar1 a {
+    display: flex;
+    width: 60px;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 20px;
+    color: white;
+    box-shadow: 0px -1px 10px -3px #0a0a0a;
+    margin-top: 20px;
+}
+.element1 div.about-me1{
+    font-family: 'Helvetica-thin';
+    color: rgb(143, 143, 143);
+    font-size: 14px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+div.element1 svg.dump-style1{
+    width: 20px;
+    fill:#3F85F6 ;
+    height: 20px;
+    position: absolute;
+    left: 28%;
+    top: 65%;
+    padding: 20px;
+  background-color:rgb(255, 255, 255);
+  border-radius: 20px;
+  display: none;
+  transition: 0.1s;
+}
+div.second-row div.element1:hover{
+    background-color:#3F85F6; 
+    cursor: pointer;
+}
+div.element1:hover p{
+    color: white;
+    }
+    div.element1:hover span{
+        color: white;
+        }
+
+
+div.element1:hover div svg.dump-style1{
+    display: block;
+    }
+    div.element1 a svg.dump-style1:hover{
+        transform: scale(1.1);
+        transition: 0.1s;
+    }
+    div.element1 a svg.dump-style1:active{
+       background-color: #b1b1b1; 
+    }
+    div.second-row div.element2{
+        display: flex;
+        height: 100%;
+        width: 20%;
+        background-color:white;
+        border-radius: 20px;
+        flex-direction: column;
+        margin: 20px;
+        /* position: relative; */
+        
+    }
+    .element2 div.avatar2{
+        
+        margin: 0 auto;
+    
+    }
+    .element2 div.avatar2 a {
+        display: flex;
+        width: 60px;
+        height: 60px;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        background-color: #0a0a0a;
+        border-radius: 20px;
+        color: white;
+        box-shadow: 0px -1px 10px -3px #0c0c0c;
+        margin-top: 20px;
+    }
+    .element2 div.about-me2{
+        font-family: 'Helvetica-thin';
+        color: rgb(143, 143, 143);
+        font-size: 14px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    
+    
+    div.element2 svg.dump-style2{
+        width: 20px;
+        fill:#3F85F6 ;
+        height: 20px;
+        position: absolute;
+        left: 48%;
+        top: 65%;
+        padding: 20px;
+      background-color:rgb(255, 255, 255);
+      border-radius: 20px;
+      display: none;
+      transition: 0.1s;
+    }
+    div.second-row div.element2:hover{
+        background-color:#3F85F6; 
+        cursor: pointer;
+    }
+    div.element2:hover p{
+        color: white;
+        }
+        div.element2:hover span{
+            color: white;
+            }
+    
+    
+    div.element2:hover div svg.dump-style2{
+        display: block;
+        }
+        div.element2 a svg.dump-style2:hover{
+            transform: scale(1.1);
+            transition: 0.1s;
+        }
+        div.element2 a svg.dump-style2:active{
+           background-color: #b1b1b1; 
+        }
+
+        div.second-row div.element3{
+            display: flex;
+            height: 100%;
+            width: 20%;
+            background-color:white;
+            border-radius: 20px;
+            flex-direction: column;
+            margin: 20px;
+            /* position: relative; */
+            
+        }
+        .element3 div.avatar3{
+            
+            margin: 0 auto;
+        
+        }
+        .element3 div.avatar3 img.car{
+            width: 60px;
+            height: 60px;
+            border-radius: 20px;
+        }
+        .element3 div.avatar3 a {
+            display: flex;
+            width: 60px;
+            height: 60px;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            border-radius: 20px;
+            color: white;
+            box-shadow: 0px -1px 25px -3px #d8d8d8;
+            margin-top: 20px;
+        }
+        .element3 div.about-me3{
+            font-family: 'Helvetica-thin';
+            color: rgb(143, 143, 143);
+            font-size: 14px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        
+        
+        div.element3 svg.dump-style3{
+            width: 20px;
+            fill:#3F85F6 ;
+            height: 20px;
+            position: absolute;
+            left: 68%;
+            top: 65%;
+            padding: 20px;
+          background-color:rgb(255, 255, 255);
+          border-radius: 20px;
+          display: none;
+          transition: 0.1s;
+        }
+        div.second-row div.element3:hover{
+            background-color:#3F85F6; 
+            cursor: pointer;
+        }
+        div.element3:hover p{
+            color: white;
+            }
+            div.element3:hover span{
+                color: white;
+                }
+        
+        
+        div.element3:hover div svg.dump-style3{
+            display: block;
+            }
+            div.element3 a svg.dump-style3:hover{
+                transform: scale(1.1);
+                transition: 0.1s;
+            }
+            div.element3 a svg.dump-style3:active{
+               background-color: #b1b1b1; 
+            }
+
+            div.second-row div.element4{
+                display: flex;
+                height: 100%;
+                width: 20%;
+                background-color:white;
+                border-radius: 20px;
+                flex-direction: column;
+                margin: 20px;
+                /* position: relative; */
+                
+            }
+            .element4 div.avatar4{
+                
+                margin: 0 auto;
+            
+            }
+            .element4 div.avatar4 a {
+                display: flex;
+                width: 60px;
+                height: 60px;
+                justify-content: center;
+                align-items: center;
+                text-decoration: none;
+                background-color:#3F85F6; 
+                border-radius: 20px;
+                color: white;
+                box-shadow: 0px -1px 25px -3px #3F85F6; 
+                margin-top: 20px;
+            }
+            .element4 div.about-me4{
+                font-family: 'Helvetica-thin';
+                color: rgb(143, 143, 143);
+                font-size: 14px;
+                margin: 0 auto;
+                text-align: center;
+            }
+            
+            
+            div.element4 svg.dump-style4{
+                width: 20px;
+                fill:#3F85F6 ;
+                height: 20px;
+                position: absolute;
+                left: 88%;
+                top: 65%;
+                padding: 20px;
+              background-color:rgb(255, 255, 255);
+              border-radius: 20px;
+              display: none;
+              transition: 0.1s;
+            }
+            div.second-row div.element4:hover{
+                background-color:#3F85F6; 
+                cursor: pointer;
+            }
+            div.element4:hover p{
+                color: white;
+                }
+                div.element4:hover span{
+                    color: white;
+                    }
+            
+            
+            div.element4:hover div svg.dump-style4{
+                display: block;
+                }
+                div.element4 a svg.dump-style4:hover{
+                    transform: scale(1.1);
+                    transition: 0.1s;
+                }
+                div.element4 a svg.dump-style4:active{
+                   background-color: #b1b1b1; 
+                }
+                div.element4:hover div.avatar4 a{
+                    background: #fff;
+                    color: black;
+                }
